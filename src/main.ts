@@ -14,6 +14,10 @@ import { initMenu } from "./menu";
 import settings from "electron-settings";
 import { updateElectronApp } from "update-electron-app";
 
+app.disableHardwareAcceleration();
+app.commandLine.appendSwitch('enable-unsafe-swiftshader');
+
+
 const VIA_BASE_URL = "https://usevia.app/";
 const APP_SCHEME = "via-desktop";
 
